@@ -1,0 +1,347 @@
+* {
+  box-sizing: border-box;
+ }
+
+ 
+ body {
+  font-family: 'Poppins', sans-serif;
+  background: #171c20;
+  color: #f3f3f3;
+  margin: 0px;
+  padding: 0px;
+  overflow: hidden;
+ }
+
+ /* header section */
+ header {
+  border-bottom: 1px solid #474f57;
+ }
+
+ .navbar {
+  font-size: 1.5rem;
+  margin-left: 16rem;
+  margin-right: 16rem;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+ }
+
+ @keyframes changetop {
+  from {
+    transform: translateY(-20vh);
+  }
+  to {
+    transform: translateY(0);
+  }
+ }
+
+ @keyframes changeright {
+  from {
+    transform: translateX(20vw);
+  }
+  to {
+    transform: translateX(0);
+  }
+ }
+
+ @keyframes changeleft {
+  from {
+    transform: translateX(-20vw);
+  }
+  to {
+    transform: translateX(0);
+  }
+ }
+
+ .navbar ul li {
+  list-style-type: none;
+ }
+
+ .navbar ul li a {
+  text-decoration: none;
+  color: #f3f3f3;
+ }
+
+ .navbar ul li a:hover {
+  border-bottom: 1px solid #f3f3f3;
+ }
+
+/* Main content and intro sentence*/
+ main {
+  display: grid;
+  grid-template-columns: 1fr 3fr 1fr;
+  grid-template-rows: auto;
+  align-items: start;
+  justify-items: center;
+  margin-top: 50px;
+  /* width: 100%; */
+  /* height: 100vh; */
+ }
+
+ .main-intro {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  max-width: 400px;
+  padding: 2rem;
+  margin-top: 20px;
+  background-color: #20272c;
+  border-radius: 0.5em;
+  box-shadow: 0px 10px 20px -10px rgba(0,0,0,0.75);
+ }
+
+.profile-img {
+  width: 150px;
+  height: 150px;
+  /* clip-path: polygon(30% 0, 70% 0, 100% 100%, 0 100%); */
+}
+
+.main-intro h2, .main-intro h3 {
+  margin: 5px 0 0 0;
+  padding: 5px 0 0 0;
+}
+
+.main-intro p {
+  line-height: 1.5em;
+  text-align: center;
+}
+
+.profile-link {
+  position: relative;
+  top: 15px;
+  left: 35%;
+}
+
+.profile-icon {
+  margin: 0 5px 0 5px;
+  height: 35px;
+  width: 35px;
+  cursor: pointer;
+}
+
+/* skill section */
+.profile-skill {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  min-width: 119%;
+  border-top: 1px solid #474f57;
+  margin: 20px 0 0 0;
+  top: 20px;
+}
+
+.profile-skill h4 {
+  margin: 10px 0 0 20px;
+  padding: 5px;
+  text-transform: uppercase;
+}
+
+.profile-skill ul {
+  list-style-type: none;
+	margin: 0 0 0 20px;
+	padding: 0;
+}
+
+.profile-skill ul li {
+  border: 1px solid rgb(211, 207, 207);
+  margin: 5px;
+  padding: 4px;
+  text-decoration: none;
+	border-radius: 2px;
+	display: inline-block;
+}
+
+/* main article content */
+ .main-content {
+  /* margin: 20px 0 0 80px; */
+  /* min-height: 75vh; */
+  /* max-width: 60vw; */
+  position: relative;
+ }
+
+.project-article {
+  min-height: 780px;
+  margin: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border-radius: 4px;
+  box-shadow: 0 10px 10px 0 rgba(75, 73, 73, 0.5);
+ }
+
+ .project-article h2 {
+  border-bottom: 1px solid rgb(213, 212, 223);
+  font-weight: bold;
+  font-size: 2em;
+ }
+
+ .project-info {
+  display: grid;
+  grid-template-rows: auto;
+  grid-template-columns: minmax(600px, 1fr) minmax(600px, 1fr);
+  align-items: center;
+  width: auto;
+  height: auto;
+  /* align-items: center; */
+  margin: 20px;
+ }
+
+ .project-img {
+  max-width: 100%;
+  height: 450px;
+  border-radius: 10px;
+  transition: .5s ease-in-out;
+
+ }
+
+ .project-img:hover {
+  cursor: pointer;
+  transition:1s;
+  transform:scale(1.03);
+  /* transform: translateY(-15px); */
+ }
+
+ .project-description {
+  margin: 20px;
+  padding: 16px;
+ }
+ 
+ .project-description p {
+  font-size: 1.5em;
+  line-height: 40px;
+ }
+
+ /* carousel testing */
+ .btn {
+  position: absolute;
+  max-width: 20%;
+  min-width: 15%;
+  top: 80%;
+  left: 42%;
+  padding: 15px 10px 15px 10px;
+  color: rgb(213, 212, 223);
+  background-color: transparent;
+  border: 1px solid rgb(234, 230, 230);
+  font-family: 'Roboto', sans-serif;
+  font-size: 20px;
+  text-transform: uppercase;
+  transition: .3s;
+  cursor: pointer;
+  border-radius: 1%;
+  overflow: hidden;
+}
+
+.btn:active {
+  transform: scale(1.1);
+}
+
+.btn:hover {
+  color: rgb(16, 15, 15);
+	background-color: white;
+}
+
+/* carousel progress bar */
+.progress-bar {
+  display: flex;
+  gap: .25rem;
+  position: absolute;
+  top: 5%;
+  left: 85%;
+}
+
+.progress-item {
+  flex: 0 0 2rem;
+  min-width: 4rem;
+  height: .75rem;
+  background-color: rgba(255,255,255, .5);
+}
+
+.progress-item.active {
+  background-color: rgba(255,255,255, .75);
+}
+
+/* Image modal */
+.modal {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  left: 20%;
+  top: 18%;
+  width: auto; /* Full width */
+  height: auto; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0,0.1); /* Black w/ opacity */
+}
+
+/* Modal Content (Image) */
+.modal-content {
+  display: block;
+  width: 800px;
+  height: 500px;
+  border-radius: 10px;
+}
+
+.github-icon {
+  position: absolute;
+  top: 88%;
+  left: 90%;
+  height: 35px;
+  width: 35px;
+  cursor: pointer;
+}
+
+.demo-link {
+  text-decoration: none;
+  position: absolute;
+  top: 88.5%;
+  left: 70%;
+  padding: 5px;
+  color: white;
+  background-color: transparent;
+  border: 1px solid rgb(234, 230, 230);
+  font-family: 'Roboto', sans-serif;
+  font-size: 20px;
+  text-transform: uppercase;
+  transition: .3s;
+  cursor: pointer;
+  border-radius: 1%;
+}
+
+/* Add Animation - Zoom in the Modal */
+.modal-content, .github-icon, .close, .demo-link {
+  animation-name: zoom;
+  animation-duration: 0.6s;
+}
+
+@keyframes zoom {
+  from {transform:scale(0)}
+  to {transform:scale(1)}
+}
+
+/* The Close Button */
+.close {
+  position: absolute;
+  top: 0%;
+  right: 2%;
+  color: #f1f1f1;
+  font-size: 60px;
+  font-weight: bold;
+  transition: 0.3s;
+}
+
+.close:hover,
+.close:focus {
+  color: #bbb;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+/* 100% Image Width on Smaller Screens */
+@media only screen and (max-width: 700px){
+  .modal-content {
+    width: 100%;
+  }
+}
