@@ -9,12 +9,14 @@
 </head>
 <body>
   <header>
+    <!-- navbar section -->
     <nav class="navbar">
       <span>KONEDI EVO</span>
       <ul> 
         <li><a href="#Home">Home</a></li>
         <li><a href="https://github.com/mejiae1994"><img class="nav-icon" src="./resources/images/github-icon.png" alt="github"></a></li>
-        <li><a href="https://github.com/mejiae1994"><img class="nav-icon" src="./resources/images/resume2.png" alt="github"></a></li>
+        <li><a href="https://docs.google.com/document/d/1oj5X1fHmXCwj7HF2MQ1sQxRLOjHg-hBzdBO3fU0ffpE/edit?usp=sharing"><img class="nav-icon" src="./resources/images/resume2.png" alt="resume"></a></li>
+        <li><a href="https://www.linkedin.com/in/mejiae1994/"><img class="nav-icon" src="./resources/images/linkedin.png" alt="linkedin"></a></li>
       </ul>
     </nav>
   </header>
@@ -22,12 +24,11 @@
     <!-- Intro of the page -->
     <div class="main-intro" >
       <h1><strong>Hi, my name is Edison Mejia </strong></h1>
-      <h3>New York</h3>
-      <p>I am a Software Developer with four years of experience <br>
-        currently directing my focus towards web development <br>
-        and web applications with the aim of broadening my skill set.
+      <p>I am a Software Developer, from New York, with four years of experience <br>
+        currently directing my focus towards web development and <br>
+        web applications with the aim of broadening my skill set.
       </p>
-
+      <a href="mailto:mejiae1994@gmail.com" class="email-btn">Contact Me</a>
       <!-- skill section -->
       <div class="profile-skill">
         <h4>Skills</h4>
@@ -45,63 +46,61 @@
 
     <!-- Main content of the page -->
     <section class="project-section">
-      <h2>PROJECTS</h2>
+      <h1>PROJECTS</h1>
       <!-- articles containing the projects -->
       
+      <!-- sets the gallery items in column -->
       <div class="project-gallery">
-        <div class="project-item">
-            <img class="project-img" src="./resources/images/eel-project.png">
-            <div class="project-description">
-              <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. 
-              Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, 
-              when an unknown printer took a galley of type and scrambled it to make a type 
-              specimen book.
-              </p> 
+        <div class="gallery-item project-1">
+          <div class="project-description">
+            <h2>Eel Video Game</h2>
+            <p>Eel is a multi-level video game in which the player assumes the role of an eel. 
+              The objective is to protect its offspring while evading deadly predators. 
+              The game is developed using plain JavaScript, HTML, and CSS, with canvas 
+              and physics algorithms utilized for rendering, animation, and movement.
+            </p> 
+            <div class="project-link">
+              <a id="github-link" href="https://github.com/mejiae1994/Eel"> <img class="github-icon" src="./resources/images/github-icon.png"> </a>
+              <a id="demo-link" href="https://mejiae1994.github.io/Eel/"> Live Demo</a>
+            </div>
+          </div>
+          <img class="project-img" src="./resources/images/eel-project.png">
+        </div>
+
+        <div class="gallery-item project-2">     
+          <img class="project-img" src="./resources/images/timerlog.png">
+           <div class="project-description">
+            <h2>Timer Log Extension</h2>
+              <p>Timer Log is a personnal chrome extension that I use to monitor/log the amount of time
+                I spent on various self-improvement actitivies such as learning, working on projects, etc.
+                It integrates with the Notion API to update a databse.
+              </p>
+              <div class="project-link">
+                <a id="github-link" href=""> <img class="github-icon" src="./resources/images/github-icon.png"> </a>
+                <!-- <a id="demo-link" href=""> Live Demo</a> -->
+              </div>
             </div>
         </div>
 
-        <div class="project-item">     
-            <img class="project-img" src="./resources/images/log-extension.PNG">
+        <div class="gallery-item project-3">
            <div class="project-description">
-              <p>Introducing "Mini Mario Adventure"! This fun and fast-paced platformer 
-                takes inspiration from classic games like "Super Mario Bros." and brings 
-                a new twist to the classic formula. Players take on the role of the lovable 
-                and iconic Mario as he journeys through a colorful world filled with obstacles
-                and enemies.
-              </p> 
+            <h2>Portfolio Website</h2>
+              <p>This portfolio website is my attempt at creating a minimalistic website with just
+                a few colors thrown at random places. It is written in Javascript, HTML, and CSS. 
+              </p>
+              <div class="project-link">
+                <a id="github-link" href=""> <img class="github-icon" src="./resources/images/github-icon.png"> </a>
+                <a id="demo-link" href=""> Live Demo</a>
+              </div>
             </div>
-        </div>
-
-        <div class="project-item">
-            <img class="project-img" src="./resources/images/image3.jpg">
-           <div class="project-description">
-              <p>One of the key features of Time Tracker is its integration with Notion, a 
-                popular all-in-one workspace for organizing your life and work. When you click
-                "Submit", the extension creates a log of your activity and pushes it directly 
-                to a designated Notion database. This allows you to easily see a complete overview
-                of your time spent on various activities and helps you stay on top of your work.
-              </p> 
-            </div>
+            <img class="project-img" src="./resources/images/portfolio.png">
         </div>
       </div>
-       <!-- Button to cycle through project
-      <button class="btn btn-next">Next Project</button> -->
-
-      <!-- progress bar
-      <div class="progress-bar">
-        <div class="progress-item active"></div>
-        <div class="progress-item active"></div>
-        <div class="progress-item active"></div>
-      </div> -->
-
-      <!-- Image model -->
-      <div id="myModal" class="modal">
-        <span class="close">&times;</span>
-        <img class="modal-content" id="img01">
-        <a id="github-link" href=""> <img class="github-icon" src="./resources/images/github-icon.png"> </a>
-        <a id="demo-link" href=""> Live Demo</a>
-      </div>
-
+    </section>
+    <!-- Video game embed -->
+    <section class="game-frame">
+      <h1>Play My Latest Video Game</h1>
+      <iframe width="700" height="700" src="https://mejiae1994.github.io/Eel/" frameborder="0"></iframe>
     </section>
   </main>
   <script src="./resources/app.js"></script>

@@ -24,39 +24,55 @@ const projectSources = [
   }
 ]
 
-let curSlide = 0;
-let maxSlide = elements.length - 1;
+// let curSlide = 0;
+// let maxSlide = elements.length - 1;
 
 // hideExceptCurrent();
 
-function hideExceptCurrent() {
-  for (let i = 0; i < elements.length; i++) {
-    if (i !== curSlide) {
-      elements[i].style.display = "none";
-      progressItems[i].classList.remove("active");
-    }
-  }
-}
+// function hideExceptCurrent() {
+//   for (let i = 0; i < elements.length; i++) {
+//     if (i !== curSlide) {
+//       elements[i].style.display = "none";
+//       progressItems[i].classList.remove("active");
+//     }
+//   }
+// }
 
-nextSlide.addEventListener("click", () => {
-   if (curSlide === maxSlide) {
-    curSlide = 0;
-  } else {
-    curSlide++;
-  }
-  hideExceptCurrent();
-  //display next
-  elements[curSlide].style.display = "";
-  progressItems[curSlide].classList.add("active");
-});
+// nextSlide.addEventListener("click", () => {
+//    if (curSlide === maxSlide) {
+//     curSlide = 0;
+//   } else {
+//     curSlide++;
+//   }
+//   hideExceptCurrent();
+//   //display next
+//   elements[curSlide].style.display = "";
+//   progressItems[curSlide].classList.add("active");
+// });
 
 for (let i = 0; i < projectImg.length; i++) {
   projectImg[i].addEventListener("click", () => {
     modal.style.display = "block";
     modalImg.src = projectImg[i].src;
+    console.log(getImagePosition(projectImg[i]));
     githubIcon.href = projectSources[i].githubLink;
     demoLink.href = projectSources[i].demoLink;
   })
+}
+
+const getImagePosition = (img) => {
+  const rect = img.getBoundingClientRect();
+  const imgW = img.width;
+  const imgH = img.height;
+  const imgLeft = rect.left + window.scrollX;
+  const imgRight = rect.top + window.scrollY;
+  
+  return {
+    left: imgLeft,
+    right: imgRight,
+    w: imgW,
+    h: imgH
+  }
 }
 
 span.onclick = function() {
