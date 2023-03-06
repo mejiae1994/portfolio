@@ -5,7 +5,7 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Document</title>
-  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="./resources/style.css">
 </head>
 <body>
   <header>
@@ -13,25 +13,20 @@
       <span>KONEDI EVO</span>
       <ul> 
         <li><a href="#Home">Home</a></li>
+        <li><a href="https://github.com/mejiae1994"><img class="nav-icon" src="./resources/images/github-icon.png" alt="github"></a></li>
+        <li><a href="https://github.com/mejiae1994"><img class="nav-icon" src="./resources/images/resume2.png" alt="github"></a></li>
       </ul>
     </nav>
   </header>
   <main>
     <!-- Intro of the page -->
     <div class="main-intro" >
-      <img class="profile-img" src="profile.png" alt="profile">
-      <h2>Edison Mejia</h2>
+      <h1><strong>Hi, my name is Edison Mejia </strong></h1>
       <h3>New York</h3>
-      <p>Software developer with four years of experience 
-        currently directing my focus towards web development 
+      <p>I am a Software Developer with four years of experience <br>
+        currently directing my focus towards web development <br>
         and web applications with the aim of broadening my skill set.
       </p>
-
-      <!-- profile links -->
-      <div class="profile-link">
-        <a href="https://github.com/mejiae1994"><img class="profile-icon" src="github-icon.png" alt="github"></a>
-        <a href="https://github.com/mejiae1994"><img class="profile-icon" src="resume2.png" alt="github"></a>
-      </div>
 
       <!-- skill section -->
       <div class="profile-skill">
@@ -49,73 +44,66 @@
     </div>
 
     <!-- Main content of the page -->
-    <section class="main-content">
-      
+    <section class="project-section">
+      <h2>PROJECTS</h2>
       <!-- articles containing the projects -->
-      <article class="project-article">
-        <h2>The Best Project Ever</h2>        
-        <div class="project-info">
-          <img class="project-img" src="image.jpg">
-          <div class="project-description">
-            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. 
-            Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, 
-            when an unknown printer took a galley of type and scrambled it to make a type 
-            specimen book.
-            </p>
-          </div>
+      
+      <div class="project-gallery">
+        <div class="project-item">
+            <img class="project-img" src="./resources/images/eel-project.png">
+            <div class="project-description">
+              <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. 
+              Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, 
+              when an unknown printer took a galley of type and scrambled it to make a type 
+              specimen book.
+              </p> 
+            </div>
         </div>
-      </article>
 
-      <article class="project-article">
-        <h2>The Best Project Ever 2</h2>        
-        <div class="project-info">
-          <img class="project-img" src="image2.png">
-          <div class="project-description">
-            <p>Introducing "Mini Mario Adventure"! This fun and fast-paced platformer 
-              takes inspiration from classic games like "Super Mario Bros." and brings 
-              a new twist to the classic formula. Players take on the role of the lovable 
-              and iconic Mario as he journeys through a colorful world filled with obstacles
-              and enemies.
-            </p>
-          </div>
+        <div class="project-item">     
+            <img class="project-img" src="./resources/images/log-extension.PNG">
+           <div class="project-description">
+              <p>Introducing "Mini Mario Adventure"! This fun and fast-paced platformer 
+                takes inspiration from classic games like "Super Mario Bros." and brings 
+                a new twist to the classic formula. Players take on the role of the lovable 
+                and iconic Mario as he journeys through a colorful world filled with obstacles
+                and enemies.
+              </p> 
+            </div>
         </div>
-      </article>
 
-      <article class="project-article">
-        <h2>The Best Project Ever 3</h2>
-        <div class="project-info">
-          <img class="project-img" src="image3.jpg">
-          <div class="project-description">
-            <p>One of the key features of Time Tracker is its integration with Notion, a 
-              popular all-in-one workspace for organizing your life and work. When you click
-              "Submit", the extension creates a log of your activity and pushes it directly 
-              to a designated Notion database. This allows you to easily see a complete overview
-              of your time spent on various activities and helps you stay on top of your work.
-            </p>
-          </div>
+        <div class="project-item">
+            <img class="project-img" src="./resources/images/image3.jpg">
+           <div class="project-description">
+              <p>One of the key features of Time Tracker is its integration with Notion, a 
+                popular all-in-one workspace for organizing your life and work. When you click
+                "Submit", the extension creates a log of your activity and pushes it directly 
+                to a designated Notion database. This allows you to easily see a complete overview
+                of your time spent on various activities and helps you stay on top of your work.
+              </p> 
+            </div>
         </div>
-      </article>
+      </div>
+       <!-- Button to cycle through project
+      <button class="btn btn-next">Next Project</button> -->
 
-       <!-- Button to cycle through project -->
-      <button class="btn btn-next">Next Project</button>
-
-      <!-- progress bar -->
+      <!-- progress bar
       <div class="progress-bar">
         <div class="progress-item active"></div>
         <div class="progress-item active"></div>
         <div class="progress-item active"></div>
-      </div>
+      </div> -->
 
       <!-- Image model -->
       <div id="myModal" class="modal">
         <span class="close">&times;</span>
         <img class="modal-content" id="img01">
-        <a id="github-link" href="http://google.com"> <img class="github-icon" src="github-icon.png"> </a>
-        <a class="demo-link" href="http://google.com"> Live Demo</a>
+        <a id="github-link" href=""> <img class="github-icon" src="./resources/images/github-icon.png"> </a>
+        <a id="demo-link" href=""> Live Demo</a>
       </div>
 
     </section>
   </main>
-  <script src="app.js"></script>
+  <script src="./resources/app.js"></script>
 </body>
 </html>
