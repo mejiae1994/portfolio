@@ -338,6 +338,7 @@ header {
 
 /* scroll button start */
 .scroll-button {
+  display: none;
   position: fixed;
   font-size: 3.5rem;
   bottom: 1%;
