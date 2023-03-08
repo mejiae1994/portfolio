@@ -366,6 +366,8 @@ a:focus {
 @media (max-width: 640px) {
   .scroll-button {
     font-size: 3rem;
+    bottom: 2%;
+    right: 4%;
   }
 }
 
