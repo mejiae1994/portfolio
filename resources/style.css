@@ -336,29 +336,42 @@ header {
 }
 /* Iframe section end */
 
-@keyframes changetop {
-  from {
-    transform: translateY(-20vh);
-  }
-  to {
-    transform: translateY(0);
+/* scroll button start */
+.scroll-button {
+  position: fixed;
+  font-size: 3.5rem;
+  bottom: 1%;
+  right: 1%;
+  background-color: var(--bg-color-lighter);
+  border-radius: 10px;
+}
+
+.scroll-button > a {
+  display: block;
+  text-align: center;
+  margin: 0 auto;
+  width: 0.8em;
+  height: 0.8em;
+  text-decoration: none;
+  color: var(--text-color);
+}
+
+.scroll-button > a:hover,
+a:focus {
+  animation: pulse 1s;
+  box-shadow: 0 0 0 0.5em transparent;
+}
+
+@media (max-width: 640px) {
+  .scroll-button {
+    font-size: 3rem;
   }
 }
 
-@keyframes changeright {
-  from {
-    transform: translateX(20vw);
-  }
-  to {
-    transform: translateX(0);
-  }
-}
+/* scroll button end */
 
-@keyframes changeleft {
-  from {
-    transform: translateX(-20vw);
-  }
-  to {
-    transform: translateX(0);
+@keyframes pulse {
+  0% {
+    box-shadow: 0 0 0 0 #99521b;
   }
 }
