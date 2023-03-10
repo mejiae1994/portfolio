@@ -357,8 +357,8 @@ header {
   color: var(--text-color);
 }
 
-.scroll-button > a:hover,
-a:focus {
+.scroll-button a:hover,
+.scroll-button a:focus {
   animation: pulse 1s;
   box-shadow: 0 0 0 0.5em transparent;
 }
