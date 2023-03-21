@@ -264,6 +264,7 @@ header {
   padding: 1.5rem;
   display: flex;
   justify-content: center;
+  align-items: center;
 }
 
 .github-icon {
@@ -283,7 +284,6 @@ header {
   font-family: "Roboto", sans-serif;
   font-size: 20px;
   text-transform: uppercase;
-  transition: 0.3s;
   cursor: pointer;
   border-radius: 4px;
 }
